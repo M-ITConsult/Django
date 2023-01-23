@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Log</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  {% load django_bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+  
+
+</head>
+<body data-bs-theme="dark" class="bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 border">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'learning_logs:index' %}">
+          Home</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <a class="nav-link" href="{% url 'learning_logs:projects' %}">Projects</a>
+            <a class="nav-link" href="{% url 'learning_logs:contact' %}">Contact</a>
+        </ul> <!-- End of links on left side of navbar -->
+      </div> <!-- Closes collapsible parts of navbar -->
+
+    </div> <!-- Closes navbar's container -->
+  </nav> <!-- End of navbar -->
+
+  <main  data-bs-theme="dark" class="bg-dark container">
+    <div data-bs-theme="dark" class="text-body bg-body pb-2 mb-2">
+      {% block page_header %}{% endblock page_header %}
+    </div>
+      {% block content %}
+      {% endblock content %}
+  </main>
+
+</body>
+{% block page_footer %}
+<div class="text-center">
+<footer><p>Website create by M-IT Consult with <a href="https://www.djangoproject.com/">Django</a> and <a href="https://getbootstrap.com/">Bootstrap</a></p></footer></div>
+{% endblock page_footer %}
+</html>

@@ -1,0 +1,29 @@
+{% extends 'learning_logs/index.html' %}
+
+{% block content %}
+<a href="https://www.linkedin.com/in/jean-christophe-miler-79b08b1b1/"><i class="fa fa-linkedin" style="font-size:36px;color:white"></i></a>&nbsp;
+<a href="https://github.com/M-ITConsult"><i class="fa fa-github" style="font-size:36px;color:white"></i></a>
+<div class="container text-center"><br>
+    <div id="barre"></div><br>
+    <div class="row">
+    <div class="col">
+<h1>Get In Touch With Me!</h1>
+<form action= https://formsubmit.co/3e6957c243de1d98a7bdf9dc45bc5a5f method="POST">
+    <input type='hidden' name='_captcha' value='true'>
+    <input type="text" name="name" placeholder='Your name' required>
+    <input type="email" name="email" placeholder='Your email' required>
+    <textarea name='message' placeholder='Your message here' required></textarea>
+    <button type="submit">Send</button>
+</form>
+&nbsp;
+    </div>
+
+    <div class="col">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.82003813144!2d4.367028315902499!3d50.68616537823286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c75c804009f6801%3A0xe0c2d0639c5f42cb!2sM-IT%20Consult!5e0!3m2!1sen!2sbe!4v1672218724000!5m2!1sen!2sbe"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+&nbsp;
+{% endblock content %}
