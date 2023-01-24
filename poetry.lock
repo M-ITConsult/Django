@@ -40,5 +40,5 @@ testing-integration = ["build[virtualenv]", "filelock (>=3.4.0)", "jaraco.envs (
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.10"
+python-versions = "^3.7.10"
 content-hash = "6973f53790d7631cb5e9492d4b8d818072bb4a710ee550bfe4dd95fef3638d08"
