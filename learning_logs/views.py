@@ -14,7 +14,7 @@ def contact(request):
     """The contact page"""
     if request.method == 'POST':
         message = request.POST['message']
-        reciver = request.POST['email']
+        reciver = settings.EMAIL_HOST_USER
 
-        send_mail('Contact Form', message, settings.EMAIL_HOST_USER, reciver, fail_silently=False)
+        send_mail(message, reciver, fail_silently=False, recipient_list=request.POST['email'])
     return render(request, 'learning_logs/contact.html')
