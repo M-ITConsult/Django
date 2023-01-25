@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.template.loader import render_to_string
 from django.core.mail import send_mail
 from django.conf import settings
+from .forms import ContactForm
 
 def index(request):
     """The home page."""
@@ -12,9 +14,25 @@ def projects(request):
 
 def contact(request):
     """The contact page"""
+    form = ContactForm()
     if request.method == 'POST':
-        message = request.POST['message']
-        reciver = settings.EMAIL_HOST_USER
+        form = ContactForm(request.POST)
 
-        send_mail(message, reciver, fail_silently=False, recipient_list=request.POST['email'])
-    return render(request, 'learning_logs/contact.html')
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            message = form.cleaned_data['message']
+
+            html = render_to_string('learning_logs/emails/contactform.html', {
+                'name': name,
+                'email': email,
+                'message': message,
+            })
+
+            send_mail('Message from M-IT Consult Website', 'This is the message', 'email', ['jchoro74@gmail.com'], html_message=html)
+
+            return redirect('/contact')
+        else:
+            form = ContactForm()
+
+    return render(request, 'learning_logs/contact.html', {'form': form})
