@@ -26,6 +26,13 @@ SECRET_KEY = 'django-insecure-h6i=9$ms-mhy4y@=_%wa@r+845wa1jvvxokycz2wmm=n0ppcu1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'jchoro74@gmail.com'
+EMAIL_HOST_PASSWORD = 'fbmogdrrlmbckmen'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 ALLOWED_HOSTS = ["*"]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
