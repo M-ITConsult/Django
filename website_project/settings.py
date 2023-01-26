@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-h6i=9$ms-mhy4y@=_%wa@r+845wa1jvvxokycz2wmm=n0ppcu1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
 
+# Email informations for form
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'jchoro74@gmail.com'
 EMAIL_HOST_PASSWORD = 'fbmogdrrlmbckmen'
