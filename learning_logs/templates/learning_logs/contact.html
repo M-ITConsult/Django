@@ -1,4 +1,4 @@
-{% extends 'learning_logs/index.html' %}
+{% extends 'learning_logs/base.html' %}
 
 {% block content %}
 <a href="https://www.linkedin.com/in/jean-christophe-miler-79b08b1b1/"><i class="fa fa-linkedin" style="font-size:36px;color:white"></i></a>&nbsp;
@@ -14,13 +14,6 @@
             {{ form.as_p }}
             <button type="submit">Send</button>
         </form>
-    <!-- <form  method="post" action="{% url 'learning_logs:contact' %}">
-        {% csrf_token %}
-        <input type="text" name="name" placeholder='Your name' required>
-        <input type="email" name="email" placeholder='Your email' required>
-        <textarea name='message' placeholder='Your message here' required></textarea>
-        <button type="submit">Send</button>
-    </form> -->
 &nbsp;
     </div>
 
