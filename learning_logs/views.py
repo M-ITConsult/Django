@@ -30,7 +30,7 @@ def contact(request):
                 'message': message,
             })
 
-            send_mail('Message from M-IT Consult Website', 'This is the message', email, ['EMAIL'], html_message=html)
+            send_mail('Message from M-IT Consult Website', 'This is the message', email, [EMAIL], html_message=html)
 
             return redirect('/contact')
         else:
