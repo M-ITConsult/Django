@@ -28,7 +28,7 @@ DEBUG = 'RENDER' not in os.environ
 
 # Email informations for form
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'jchoro74@gmail.com'
+EMAIL_HOST_USER = '$EMAIL'
 EMAIL_HOST_PASSWORD = '$PASSWORD_GMAIL'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
