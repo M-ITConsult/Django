@@ -9,7 +9,7 @@ urlpatterns = [
     # Home page
     path('', views.index, name='index'),
     # Page that shows all topics.
-    path('projects/', views.projects, name='projects'),
+    path('', views.projects, name='projects'),
     # Contact page.
-    path('contact/', views.contact, name='contact')
+    path('', views.contact, name='contact')
 ]
