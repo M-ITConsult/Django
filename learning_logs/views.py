@@ -9,9 +9,8 @@ def index(request):
     """The home page."""
     return render(request, 'learning_logs/index.html')
 
-def projects(request):
-    """The projects page."""
-    return render(request, 'learning_logs/projects.html')
+"""def projects(request):
+    return render(request, 'learning_logs/projects.html')"""
 
 def contact(request):
     """The contact page"""
@@ -36,4 +35,4 @@ def contact(request):
         else:
             form = ContactForm()
 
-    return render(request, 'learning_logs/contact.html', {'form': form})
+    return render(request, 'learning_logs/index.html', {'form': form})
