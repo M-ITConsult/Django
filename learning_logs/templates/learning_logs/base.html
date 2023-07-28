@@ -13,9 +13,11 @@
   {% load django_bootstrap5 %}
   {% bootstrap_css %}
   {% bootstrap_javascript %}
-  
 </head>
-<body data-bs-theme="dark" class="bg-dark d-flex flex-column h-100">
+
+<!-- Navbar -->
+
+<!-- <body data-bs-theme="dark" class="bg-dark d-flex flex-column h-100">
   <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 border">
     <div class="container-fluid">
       <a class="navbar-brand" href="{% url 'learning_logs:index' %}">
@@ -31,11 +33,32 @@
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <a class="nav-link" href="{% url 'learning_logs:projects' %}">Projects</a>
             <a class="nav-link" href="{% url 'learning_logs:contact' %}">Contact</a>
-        </ul> <!-- End of links on left side of navbar -->
-      </div> <!-- Closes collapsible parts of navbar -->
+        </ul>
+      </div>
 
-    </div> <!-- Closes navbar's container -->
-  </nav> <!-- End of navbar -->
+    </div>
+  </nav>  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+      <img src="assets/code.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">M-IT Consult</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'learning_logs:projects' %}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'learning_logs:contact' %}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- End of navbar -->
 
   <main  data-bs-theme="dark" class="bg-dark container">
     <div data-bs-theme="dark" class="text-body bg-body pb-2 mb-2">
