@@ -60,13 +60,167 @@
   
   <!-- End of navbar -->
 
-  <main  data-bs-theme="dark" class="bg-dark container">
+  <!-- <main  data-bs-theme="dark" class="bg-dark container">
     <div data-bs-theme="dark" class="text-body bg-body pb-2 mb-2">
       {% block page_header %}{% endblock page_header %}
     </div>
       {% block content %}
       {% endblock content %}
-  </main>
+  </main> -->
+   <!-- Home content -->
+
+   <div data-bs-spy="scroll" data-bs-target="#navbarNav" class="container text-center"><br>
+    <div data-bs-theme="dark" class="bg-body text-center text-body">
+        <h1>Hi, I am Jean-Christophe Miler 👋</h1><br>
+        <br><br><br>
+    <img src="{% static 'learning_logs/Me.png' %}" alt=""><br>&nbsp;
+    <br><br><br>
+    <div id="barre"></div><br>
+<br><br><br>
+      <div class="row text-body">
+        <div class="col">
+            <h2>What I Do</h2><br>
+            <h5><ul>Software Installation <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-usb-drive-fill" viewBox="0 0 16 16">
+              <path d="M6 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4H6v-4ZM7 1v1h1V1H7Zm2 0v1h1V1H9ZM5.5 5a.5.5 0 0 0-.5.5V15a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V5.5a.5.5 0 0 0-.5-.5h-6Z"/>
+            </svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-disc" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1zm4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5z"/>
+            </svg><br>
+            Support & Service <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+              <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+            </svg><br>
+            Python Dev <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-py" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z"/>
+            </svg><br>
+            Java Dev <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z"/>
+              <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+            </svg> in course...<br>
+            &nbsp;
+<br><br><br><br>
+    <div id="barre"></div><br>
+      <!-- Snow for winter season -->
+        <!-- <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div> 
+        <div class="snowflake">❄</div> -->
+
+    <!-- End Home content -->
+
+    <!-- Projects content -->
+    <br><br><br>
+    <h1 id="scrollspyHeading1" class="text-center">My Projects</h1>
+    &nbsp;<br><br><br><br><br><br><br>
+
+     <div class="row featurette">
+       <div class="col-md-7">
+         <h2 class="featurette-heading fw-normal lh-1">Docx To Csv file links Python <span class="text-body-secondary">Script</span></h2>
+         <p class="lead">If you want extract one link or many others from .docx file and save to a .csv file, with this script, easy peasy!</p><br>
+       </div>
+       <div class="col-md-5">
+        <a href="https://github.com/M-ITConsult/Dev_Prog/blob/master/doc_links_to_csv.py"><img src="{% static 'learning_logs/docx_csv_script.png' %}" class="img-fluid shadow mb-5 bg-body-tertiary rounded" alt="..."></a>
+      </div>
+     </div>
+ 
+ <br><br><br><br>
+     <div class="row featurette">
+       <div class="col-md-7 order-md-2">
+         <h2 class="featurette-heading fw-normal lh-1">Email Automation Python <span class="text-body-secondary">Script</span></h2>
+         <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p><br>
+       </div>
+       <div class="col-md-5 order-md-1">
+        <a href="https://github.com/M-ITConsult/Email_Automation_In_Python"><img src="{% static 'learning_logs/email_automation.png' %}" class="img-fluid shadow mb-5 bg-body-tertiary rounded" alt="..."></a>
+      </div>
+     </div>
+<br><br><br><br> 
+     <div class="row featurette">
+       <div class="col-md-7">
+         <h2 class="featurette-heading fw-normal lh-1">QR Code Generator Python <span class="text-body-secondary">Script</span></h2>
+         <p class="lead">If you want create a QR Code, like a website, a picture or anything else ans intregate in email by exemple, use this script!</p><br>
+       </div>
+       <div class="col-md-5">
+         <a href="https://github.com/M-ITConsult/Qr-Code-Generator-Script-in-Python"><img src="{% static 'learning_logs/qr_code_generator.png' %}" class="img-fluid shadow mb-5 bg-body-tertiary rounded" alt="..."></a>
+      </div>
+     </div>
+<br><br><br><br> 
+     <div class="row featurette">
+       <div class="col-md-7 order-md-2">
+         <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+         <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p><br>
+       </div>
+       <div class="col-md-5 order-md-1">
+        <a href="https://github.com/M-ITConsult/Dev_Prog/blob/master/PDF_Translate_file.py"><img src="{% static 'learning_logs/pdf_file_translator.png' %}" class="img-fluid shadow mb-5 bg-body-tertiary rounded" alt="..."></a>
+      </div>
+     </div>
+<br><br><br><br>
+     <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p><br>
+      </div>
+      <div class="col-md-5">
+       <a href="https://github.com/M-ITConsult/BMI_Calculator"><img src="{% static 'learning_logs/bmi_calculator.png' %}" class="img-fluid shadow mb-5 bg-body-tertiary rounded" alt="..."></a>
+      </div>
+    </div>
+ 
+     <!-- End Projects content -->
+ <br><br><br><br><br><br><br>
+    &nbsp;
+
+    <!-- Contact content -->
+
+    <div id="barre"></div><br>
+    <div class="row">
+      <div class="col">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <a href="https://www.linkedin.com/in/jean-christophe-miler-79b08b1b1/"><lottie-player src="{% static 'learning_logs/linkedin.json' %}"  background="transparent"  speed="1"  style="width: 80px; height: 80px;" loop autoplay></lottie-player></a>
+      </div>
+      <div class="col">
+      <a href="https://github.com/M-ITConsult"><lottie-player src="{% static 'learning_logs/github.json' %}"  background="transparent"  speed="1"  style="width: 80px; height: 80px;" loop autoplay></lottie-player></a>
+          </div>
+      </div>
+      <!-- <a href="https://www.linkedin.com/in/jean-christophe-miler-79b08b1b1/"><i class="fa fa-linkedin" style="font-size:36px;color:white"></i></a>&nbsp;
+      <a href="https://github.com/M-ITConsult"><i class="fa fa-github" style="font-size:36px;color:white"></i></a> -->
+      <div class="container text-center"><br>
+          <div id="barre"></div><br>
+          <div class="row">
+          <div class="col">
+      <h1>Get In Touch With Me!</h1>
+              <form action="." method="post">
+                  {% csrf_token %}
+      
+                  {{ form.as_p }}
+                  <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+      &nbsp;
+          </div>
+      
+          <div class="col">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.82003813144!2d4.367028315902499!3d50.68616537823286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c75c804009f6801%3A0xe0c2d0639c5f42cb!2sM-IT%20Consult!5e0!3m2!1sen!2sbe!4v1672218724000!5m2!1sen!2sbe"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+      </div>
+      &nbsp;
+
+    <!-- End Contact content -->
+
+  <!-- Footer content -->
   <footer class="footer mt-auto py-3 bg-dark text-center">
     <div class="container">
       <span class="text-muted">Website create by M-IT Consult with <a href="https://www.djangoproject.com/">Django</a> and <a href="https://getbootstrap.com/"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
@@ -75,6 +229,8 @@
       </svg></a></span>
     </div>
   </footer>
+  <!-- End Footer content -->
+
 </body>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FJ1NWDWKS"></script>
