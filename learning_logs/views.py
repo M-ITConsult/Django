@@ -6,13 +6,6 @@ from .forms import ContactForm
 from password import *
 
 def index(request):
-    """The home page."""
-    return render(request, 'learning_logs/index.html')
-
-"""def projects(request):
-    return render(request, 'learning_logs/projects.html')"""
-
-def contact(request):
     """The contact page"""
     form = ContactForm()
     if request.method == 'POST':
