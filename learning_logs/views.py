@@ -28,4 +28,4 @@ def index(request):
         else:
             form = ContactForm()
 
-    return render(request, 'learning_logs/index.html', {'form': form})
+    return render(request, 'learning_logs/base.html', {'form': form})
