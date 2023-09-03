@@ -24,7 +24,7 @@ def index(request):
 
             send_mail('Message from M-IT Consult Website', 'This is the message', email, [EMAIL], html_message=html)
 
-            return redirect('/contact')
+            return redirect('/#contact')
         else:
             form = ContactForm()
 
