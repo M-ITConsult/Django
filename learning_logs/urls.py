@@ -7,6 +7,6 @@ from . import views
 app_name = 'learning_logs'
 urlpatterns = [
     # Home page
-    path('', views.index, name='base'),
+    path('contact/', views.index, name='contact'),
     
 ]
