@@ -17,24 +17,10 @@
   {% bootstrap_javascript %}
 
 </head>
-<body data-bs-theme="dark">
-<!--class="bg-dark d-flex flex-column h-100"-->
+<body data-bs-theme="dark" class="bg-dark d-flex flex-column h-100">
 <!-- Navbar -->
-<!-- Test bouton Dark/White mode -->
-<div class="form-check form-switch mx-4">
-  <input
-        class="form-check-input p-2" 
-        type="checkbox"
-        role="switch"
-        id="flexSwitchCheckChecked"
-        checked
-        onclick="darkLight()"
-        />
-</div>
-<script src="/staticfiles/learning_logs/darkmode.js"></script>
 
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <!--bg-dark-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="{% url 'learning_logs:base' %}">
       <img src="/staticfiles/learning_logs/code.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">M-IT Consult</a>
