@@ -23,7 +23,6 @@ from django.views.static import serve
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('flamingo/', include('learning_logs.urls')),
     path('', include('learning_logs.urls')),
     re_path(r'^static/(?P<path>.*)$', serve, {'document_root':settings.STATIC_ROOT}),
 ]

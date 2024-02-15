@@ -30,5 +30,5 @@ def index(request):
 
     return render(request, 'learning_logs/base.html', {'form': form})
 
-def flamingo():
-    return render('learning_logs/flamingo.html')
+def flamingo(request):
+    return render(request, 'learning_logs/flamingo.html')
