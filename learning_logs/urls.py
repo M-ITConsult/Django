@@ -8,6 +8,5 @@ app_name = 'learning_logs'
 urlpatterns = [
     # Home page
     path('', views.index, name='base'),
-    path('/flamingo', name='flamingo'),
-    
+    path('flamingo/', views.flamingo, name='flamingo')
 ]

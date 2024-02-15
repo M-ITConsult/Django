@@ -29,3 +29,6 @@ def index(request):
             form = ContactForm()
 
     return render(request, 'learning_logs/base.html', {'form': form})
+
+def flamingo():
+    return render('learning_logs/flamingo.html')
