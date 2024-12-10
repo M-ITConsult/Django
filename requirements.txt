@@ -1,6 +1,7 @@
 django
 django-bootstrap5
 django-database-url
+django-cors-headers
 dj-database-url
 gunicorn
 psycopg2-binary
